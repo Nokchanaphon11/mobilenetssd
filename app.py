@@ -155,6 +155,8 @@ def event_handle(event):
             replyObj = TextSendMessage(text="No matter what they say")
         elif msg == "No matter what they do" :
             replyObj = TextSendMessage(text="We gon' resonate resonate")
+        else :
+                replyObj = TextSendMessage(text=msg)
         line_bot_api.reply_message(rtoken, replyObj)
     elif msgType == "image":
         try:
